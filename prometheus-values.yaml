@@ -1,0 +1,25 @@
+# prometheus-values.yaml
+prometheus:
+  prometheusSpec:
+    additionalScrapeConfigs:
+    - job_name: 'microservices-api-gateway'
+      static_configs:
+      - targets: ['api-gateway.microservices.svc.cluster.local:3000']
+      metrics_path: '/metrics'
+      scrape_interval: 15s
+
+    - job_name: 'microservices-order-service'
+      static_configs:
+      - targets: ['order-service.microservices.svc.cluster.local:3001']
+      metrics_path: '/metrics'
+      scrape_interval: 15s
+
+    - job_name: 'microservices-inventory-service'
+      static_configs:
+      - targets: ['inventory-service.microservices.svc.cluster.local:3002']
+      metrics_path: '/metrics'
+      scrape_interval: 15s
+
+    serviceMonitorSelectorNilUsesHelmValues: false
+    serviceMonitorSelector: {}
+    serviceMonitorNamespaceSelector: {}

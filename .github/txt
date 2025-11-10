@@ -1,0 +1,6 @@
+kubectl port-forward -n monitoring service/kube-prometheus-stack-prometheus 9090:9090
+kubectl port-forward -n monitoring service/kube-prometheus-stack-grafana 8080:80
+kubectl port-forward -n microservices service/frontend 8000:80
+kubectl port-forward -n microservices service/api-gateway 3000:3000
+kubectl port-forward -n microservices service/inventory-service 3002:3002
+kubectl port-forward -n microservices service/order-service 3001:3001
