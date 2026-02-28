@@ -16,7 +16,7 @@ pipeline{
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                // Add deploy steps here (e.g., docker build, kubectl apply)
+                // Add deploy steps here (e.g., docker build, kubectl apply ...)
             }
         }
     }
