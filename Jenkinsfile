@@ -15,7 +15,7 @@ pipeline{
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying  is donefdb......'
+                echo 'Deploying  is donefdbtrb......'
                 // Add deploy steps here (e.g., docker build, kubectl apply ....)
             }
         }
