@@ -9,7 +9,7 @@ pipeline{
         }
         stage('Test') {
             steps {
-                echo 'Testing...'
+                echo 'Testing is done ...'
                 // Add test steps here (e.g., npm test, mvn test ...)
             }
         }
