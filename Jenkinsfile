@@ -10,7 +10,7 @@ pipeline{
         stage('Test') {
             steps {
                 echo 'Testing...'
-                // Add test steps here (e.g., npm test, mvn test)
+                // Add test steps here (e.g., npm test, mvn test ...)
             }
         }
         stage('Deploy') {
