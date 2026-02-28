@@ -4,7 +4,7 @@ pipeline{
         stage('Build') {
             steps {
                 echo 'Building...'
-                // Add build steps here (e.g., npm install, mvn clean install...)
+                // Add build steps here (e.g., npm install, mvn clean install....)
             }
         }
         stage('Test') {
